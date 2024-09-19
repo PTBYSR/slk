@@ -2664,6 +2664,17 @@ figcaption {
   padding-right: 1.7vw;
 }
 
+.call-to-action-1 {
+  border-bottom: 1px solid var(--border);
+  /* text-align: ; */
+  flex-direction: column;
+  justify-content: flex-end;
+  /* align-items: flex-end; */
+  /* padding-top: 260px; */
+  padding-bottom: 30px;
+  display: flex;
+  margin-bottom: 50px;
+}
 .call-to-action {
   border-bottom: 1px solid var(--border);
   text-align: right;
@@ -3656,6 +3667,22 @@ figcaption {
   width: 100%;
   border-radius: 10px;
 }
+
+
+.vid-wrapper {
+  width: 100%; 
+  aspect-ratio: 16 / 9; 
+  overflow: hidden;
+}
+
+.post-vid {
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 14px;
+}
+
 
 @media screen and (max-width: 991px) {
   h1 {
