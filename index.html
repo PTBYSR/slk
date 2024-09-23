@@ -28,7 +28,7 @@
   <div data-animation="over-right" data-collapse="small" data-duration="600" data-easing="ease-in-out-quint"
     data-easing2="ease-in-out-quint" role="banner" class="navbar w-nav">
     <div class="block-navbar">
-      <div class="nav"><a href="index.html" class="brand w-nav-brand"><img
+      <div class="nav"><a href="../index.html" class="brand w-nav-brand"><img
             src="https://cdn.prod.website-files.com/630efbe8ac35922a8eff4563/630f3614b2222f048bcaaeb4_logo.svg" style="display: none;"
             loading="eager" alt="" class="logo" /></a></div>
       <div class="nav">
@@ -37,10 +37,14 @@
               src="https://cdn.prod.website-files.com/630efbe8ac35922a8eff4563/630f409c7738ca9388e65c2f_menu.svg"
               loading="eager" alt="" class="icon-menu" /></div>
         </div>
-        <nav style="display: none;" role="navigation" id="navLinks" class="nav-menu w-nav-menu"><a href="work/work-a.html"
-            class="nav-link w-nav-link">Work<br /></a><a href="about.html" class="nav-link w-nav-link">About<br /></a><a
-            href="blog.html" class="nav-link w-nav-link">Blog<br /></a><a href="contact/contact-a.html"
-            class="nav-link w-nav-link">Contact<br /></a></nav>
+        <nav style="" role="navigation" id="navLinks" class="nav-menu w-nav-menu">
+          <a href="../work.html"
+            class="nav-link w-nav-link">Work<br /></a>
+            <a href="about.html" class="nav-link w-nav-link">About<br /></a>
+            
+            <a href="/../../contact.html"
+            class="nav-link w-nav-link">Contact<br /></a>
+          </nav>
       </div>
     </div>
   </div>
@@ -646,13 +650,20 @@
   <script>
 
 document.addEventListener('DOMContentLoaded', () => {
+  console.log("work mtf")
     const menuToggle = document.getElementById('menuToggle');
     const navLinks = document.getElementById('navLinks');
 
     menuToggle.addEventListener('click', () => {
         navLinks.classList.toggle('active');
         menuToggle.classList.toggle('active');
+        
 
+        if (navLinks.style.display === "none") {
+          navLinks.style.display = "block";
+        } else {
+          navLinks.style.display = "none";
+            }
     });
 });
   </script>

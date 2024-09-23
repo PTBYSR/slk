@@ -2095,13 +2095,13 @@ textarea.w-select {
   position: static;
 }
 
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
   .w-nav .w-nav-button {
     display: block;
   }
 
   .w-nav-menu .active {
-    display: block;
+    display: block!important;
   }
   .w-nav-menu {
     display: none ;
@@ -2113,16 +2113,21 @@ textarea.w-select {
   .w-nav .w-nav-button .active {
     display: block;
   }
-}
+} */
 
 @media screen and (max-width: 767px) {
-  .w-nav .w-nav-button .active {
-    display: block;
+  .w-nav-button {
+    display: block!important;
   }
 
+  
   .w-nav-menu {
-    display: none !important;
+    display: none;
   }
+  
+  /* .nav-menu.w-nav-menu .active {
+    display: block!important;
+  } */
 
   .w-nav-brand {
     padding-left: 10px;
